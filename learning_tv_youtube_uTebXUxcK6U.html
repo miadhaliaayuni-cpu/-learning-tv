@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning TV - Video Pembelajaran</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 16px;
+      background: transparent;
+      font-family: Arial, sans-serif;
+    }
+    .tv {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 14px;
+      background: linear-gradient(145deg, #444, #171717 48%, #303030);
+      border: 5px solid #666;
+      border-radius: 26px;
+      box-shadow: 0 8px 16px rgba(0,0,0,.28);
+    }
+    .screen {
+      padding: 6px;
+      background: #000;
+      border: 2px solid #777;
+      border-radius: 13px;
+    }
+    .screen-inner {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #000;
+      border-radius: 8px;
+    }
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 5px 2px;
+      color: #fff;
+    }
+    .brand {
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .power {
+      color: #54ff75;
+      font-size: 12px;
+    }
+    .tv-neck {
+      width: 30%;
+      height: 12px;
+      margin: 0 auto;
+      background: linear-gradient(#444, #222);
+      border-radius: 0 0 5px 5px;
+    }
+    .tv-foot {
+      width: 44%;
+      height: 8px;
+      margin: 0 auto;
+      background: #333;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="tv">
+    <div class="screen">
+      <div class="screen-inner">
+        <iframe
+          src="https://www.youtube.com/embed/uTebXUxcK6U"
+          title="Video pembelajaran"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="panel">
+      <span class="brand">📺 LEARNING TV</span>
+      <span class="power">● POWER</span>
+    </div>
+  </div>
+  <div class="tv-neck"></div>
+  <div class="tv-foot"></div>
+</body>
+</html>
